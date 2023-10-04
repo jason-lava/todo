@@ -1,0 +1,77 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --video-height: 540px;
+    --video-width: 960px;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.layout {
+    height: 90vh;
+    width: 90vw;
+    margin: 50px;
+    margin-top: 10px;
+    background-color: beige;
+}
+
+#todoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#todoItems, #todoCompleted { 
+    border: 1px solid purple;
+    height: 45vh;
+    width: 90vw;
+    overflow: scroll;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+#todoAdd {
+    height: 35px;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#todoAdd:hover {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    height: 35px;
+    padding-left: 10px;
+    text-overflow: clip;
+    transition-duration: 500ms;
+}
+
+li:hover {
+    background-color: bisque;
+    cursor: pointer;
+    color: black;
+    translate: calc(2%);
+    transition-duration: 500ms;
+}
